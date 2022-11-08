@@ -1,0 +1,84 @@
+.faq-container{
+    background-color: rgba(223, 223, 223, 0.425);
+    background-image: url("../../assets/bgdesign1.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 20%;
+    padding: 50px 0px;
+    font-family: var(--textFamily);
+    color: var(--blackColor);
+    position: relative;
+}
+.faq-page{
+    padding: 30px 0px;
+}
+.faq-page .page-title{
+    font-size: 50px;
+    font-family: var(--headingFamily);
+    font-weight: 600;
+    color: var(--blackColor);
+}
+.faqs{
+    width: 100%;
+    margin:0 auto;
+}
+.faqs .faq{
+    margin: 5px 0px 10px 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border:2px solid #e4e2e2!important;
+}
+.faqs .faq-question {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    font-family: var(--textFamily);
+    color: var(--blackColor);
+    padding: 15px;
+    transition: o.4s all ease-in-out;
+}
+
+.faqs  .faq-question:after{
+    content:'';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform:translateY(-50%);
+    font-size: 10px;
+    width: 1.25rem;
+    height: 1.25rem;  
+    background-image: url('../../assets/arrowdown.svg');
+    background-position: center;
+    background-size: 1.25rem;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    padding-right: 4rem;
+}
+.faqs  .faq-answer{
+    opacity:0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition:  all 0.4s ease;
+    color: var(--blackColor);
+    font-size: 16px; 
+    font-family: var(--textFamily);
+    font-weight: 500;
+    text-align: justify;
+    padding: 5px 10px;
+    line-height: 30px;
+     
+}
+.faqs  .open .faq-question{
+    margin-bottom: 25px;
+    background-color:var(--goldColor);
+}
+.faqs  .open .faq-question::after{
+    transform: translateY(-50%) rotate(180deg);
+}
+.faqs  .open .faq-answer{
+    max-height: 1000px;
+    opacity: 1;
+}

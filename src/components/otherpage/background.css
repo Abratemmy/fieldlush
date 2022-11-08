@@ -1,0 +1,60 @@
+.otherpage-bg{
+    background:linear-gradient(180deg, rgba(25, 26, 25, 0.404), rgba(18, 19, 18, 0.877)), url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    color:#fff;
+    font-family: var(--textFamily);
+    padding: 40px;
+}
+.otherpage-bg h1{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.otherpage-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+}
+.otherpage-text .icon{
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+.otherpage-text .other-nav{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 5px;
+    transition: 0.4s all ease;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+.otherpage-text span{
+    position: relative;
+    transition: 0.4s all ease;
+}
+.otherpage-text span:hover{
+    color: var(--greenColor)
+}
+.otherpage-text span:hover .other-nav{
+    color: var(--greenColor)
+}
+.otherpage-text >:nth-child(2){
+    padding: 0px 10px!important;
+    color: #fff;
+}
+.otherpage-text .icon2{
+    font-size: 20px;
+}
+.otherpage-text .subtitle{
+    color: var(--goldColor);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

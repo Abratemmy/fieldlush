@@ -1,0 +1,305 @@
+.homepage{
+    width: 100%;
+    overflow: hidden;
+}
+.banner{
+    position: relative;
+    background-image: linear-gradient(120deg, rgba(136, 148, 134, 0.301), rgba(39, 39, 39, 0.103)),url("../../assets/banner.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 30px 0px;
+}
+.rough-edges{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image: url("../../assets/brushdown.png");
+    height: 23px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    
+}
+.banner h1{
+    font-size: 70px;
+    transform: all 500ms ease;
+    color: var(--goldColor);
+    font-weight: 900;
+    font-family: var(--headingFamily);
+    padding-top: 30px;
+}
+.banner .design{
+    position: relative;
+}
+.banner .design img{
+    position: absolute;
+    top:-30px;
+    right:0px;
+    width: 80px;
+   
+ 
+}
+.banner p{
+    color: #fff;
+    font-family: var(--textFamily);
+    font-size: 20px;
+    max-width: 550px; 
+}
+
+
+/* css for home-produts */
+.home-products{
+    margin: 70px 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    grid-gap: 30px
+}
+.home-products .category{
+    background-color: rgba(223, 223, 223, 0.26);
+    font-size: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.home-products img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.home-product-content{
+    text-align: center;
+    font-family: var(--textFamily);
+    color: var(--blackColor);
+}
+.home-product-content .name, .price{
+    font-size: 20px;
+    font-weight: 600;
+}
+.home-product-content .subtitle, .profit, .duration, .season{
+    font-size: 16px;
+}
+
+
+/* what we do starts here */
+.whatwedo{
+    background-image: url("../../assets/bgdesign1.png");
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 20%;
+    padding: 50px 0px;
+    width: 100%;
+    position: relative;
+}
+
+.whatwedo h1{
+    text-align: center;
+    color: var(--blackColor);
+    font-family: var(--headingFamily);
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: 0.8px;
+    padding-bottom: 10px;
+}
+.whatwedo img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s all ease-in;
+}
+.whatwedo .content{
+    padding: 15px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+}
+.whatwedo .name{
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-transform: uppercase; 
+    color: var(--greenColor);
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+.whatwedo p{
+    line-height: 30px;
+    text-align: justify;
+}
+.whatwedo .card{
+    position: relative;
+    border: 1px solid var(--goldColor);
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+.whatwedo .card:hover img{
+    opacity: 0.8;
+    transform: scale(0.97);
+}
+
+
+/* css for home-other-products */
+.home-other-products{
+    background-color: var(--greenColor);
+    padding: 50px 0px;
+    position: relative;
+}
+.home-other-products h1{
+    background-image: url("../../assets/textbackground.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: center;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: capitalize;
+    font-family: var(--headingFamily);
+    max-width: 600px;
+    margin:0 auto;
+    text-align: center;
+}
+.home-other-products .subtitle{
+    color:#fff;
+    max-width: 600px;
+    margin:0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: var(--textFamily);
+    font-size: 20px;
+}
+.home-other-products img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.home-other-products .card{
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.home-other-products .card .content{
+    padding: 7px;
+    font-family: var(--textFamily);
+    background: #fff;
+    transition: 0.4s all ease;
+    border-radius: 10px;
+}
+.home-other-products .card:hover .content{
+    background: var(--goldColor)
+}
+.home-other-products .name{
+    font-size: 16px;
+    color: var(--greenColor);
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.9px;
+    padding-bottom: 10px;
+}
+.home-other-products p{
+    color: var(--blackColor);
+    line-height: 25px;
+    font-size: 15px;
+    text-align: justify;
+}
+.achievment{
+    background-color: #fff;
+    padding: 50px 0px;
+    width: 100%;
+    position: relative;
+    font-family: var(--textFamily);
+    align-items: center;
+}
+.achievment .line{
+    border-right: 1px solid var(--greenColor);
+}
+.achievment .subtitle{
+    text-transform: uppercase;
+    color: var(--greenColor);
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 10px
+}
+.achievment .title{
+    font-size: 35px;
+    color: var(--blackColor);
+    max-width: 300px;
+    font-weight:600;
+}
+.achievment .numbercounter{
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+    padding-top: 40px;
+}
+.achievment .number>:nth-child(1){
+    font-size: 25px;
+    color: var(--goldColor);
+}
+.achievment .number>:nth-child(2){
+    color: var(--blackColor);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* css for home-social */
+.home-social{
+    background-image: url("../../assets/bgdesign1.png");
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 20%;
+    text-align: center;
+    padding: 50px 0px;
+}
+.home-social .title{
+    font-family: var(--headingFamily);
+    color: var(--blackColor);
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing:0.8px;
+}
+.home-social .icon{
+    font-size: 50px;
+    color: var(--greenColor);
+    margin-bottom: 20px;
+}
+.home-social p{
+    font-family: var(--textFamily);
+    color: var(--blackColor);
+    font-size: 16px;
+}
+.home-social .p2{
+    position: relative;
+    top:-10px;
+}
+
+@media screen and (max-width: 500px) {
+    .banner h1{
+        font-size:50px;  
+    }
+    .banner p{
+        font-size: 16px;
+    }
+    .home-other-products h1{
+        font-size: 45px;
+    }
+    .home-other-products .subtitle{
+        font-size: 16px;
+    }
+    .achievment .numbercounter{
+        display: flex;
+        gap: 1rem;
+        padding-top: 20px;
+    }
+    .achievment .number>:nth-child(1){
+        font-size: 18px;
+    }
+    .achievment .number>:nth-child(2){
+        color: var(--blackColor);
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+}

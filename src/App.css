@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,37 @@
   to {
     transform: rotate(360deg);
   }
+} */
+:root{
+  --blackColor: rgba(36, 35, 35, 0.897);
+  --headingFamily:'Handlee', cursive;
+  --textFamily:'Manrope', sans-serif;
+  --goldColor:#f7c35f;
+  --greenColor: rgb(0, 143, 45);
+  --backgroundColor: rgb(238, 239, 248);
+  --white: rgba(240, 234, 234, 0.89);
+  --background: rgba(223, 223, 223, 0.26);
+}
+
+body{
+  background: #fff;
+}
+.div-nav{
+  padding-top: 30px;
+}
+.nav-btn{
+  background: var(--goldColor);
+  color: var(--blackColor);
+  font-family: var(--textFamily);
+  padding: 10px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight:600;
+  transition: 0.4s all ease;
+  border: none;
+}
+.nav-btn:hover{
+  background: #fff;
+  color: var(--blackColor)
 }
